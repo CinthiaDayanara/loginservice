@@ -10,7 +10,7 @@ connectDB();
 
 // Configura CORS para permitir solicitudes desde el frontend
 app.use(cors({
-  origin: 'http://127.0.0.1:5500', // Permite solicitudes desde esta URL
+  origin: '*', // Permite solicitudes desde esta URL
   methods: 'GET,POST,PUT,DELETE', // Métodos HTTP permitidos
 }));
 
